@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age of Kings </title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Styles/headerstyle.css">
+    <link rel="stylesheet" href="Styles/navstyle.css">
+    <link rel="stylesheet" href="Styles/loginstyle.css">
+    <link rel="stylesheet" href="Styles/mainstyle.css">
+    <link rel="stylesheet" href="Styles/cadstyle.css">
+    <script defer src="JavaScript/navscript.js"></script>
+    <script defer src="JavaScript/loginscript.js"></script>
+</head>
+<body>
+    <div id="topcontent" class="topcontent">
+        <header>
+            
+            
+ <!-- //////////////////////////////// LOGO ////////////////////////////////////////////////////////////////////////            -->
+            
+            <div class="divheader">
+                <a href="Index.html" class="logo"><img src="images/logo.fw.png" alt="logo Age of Kings" class="logo"></a>
+            </div>
+
+<!-- ////////////////////////////////// CAIXA DE BUSCA/////////////////////////////////////////////////////// -->
+
+
+
+
+
+            
+            <div class="divbusca">
+                <input type="text" name="txtbusca" class="busca" placeholder="Pesquisar...">
+                <input type="image" src="images/buscar.png" alt="" class="btnbuscar">
+            </div>
+
+
+
+<!-- ////////////////////////////// LOGIN ///////////////////////////////////////////////////////// -->
+
+            
+            <div class="divheader" >
+                <button data-modal-target="#modal" class="loginbtn">Login</button>
+                    <div class="modal" id="modal">
+                    <div class="modal-header">
+                    <div class="title"> Bem Vindo!</div>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="modal-body">
+        
+                    <div class="div-login">
+                    <input type="text" name="login" class="textbox" id="login" placeholder="Login">
+        
+                    <input type="password" name="senha" class="textbox" id="senha" placeholder="Senha">
+                    <button type="submit" class="btnlogin"> Login </button>
+                    </div>
+
+                    <!-- footer  -->
+                <div class="footertxt">Não possui login? <button data-modal-target="#modal2" data-close-button1 class="cadlink">Cadastre-se</button></div>
+            </div>
+        </div>
+        <div  id="overlay"></div>
+
+
+
+<!-- ////////////////// CADASTRO //////////////////////////////////////////////////// -->
+
+
+
+
+
+        <div class="modalcad" id="modal2" >
+            <div class="modal-header-cad">
+            <div class="title"> Cadastre-se</div>
+            <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body-cad">
+    
+                <div class="div-cad">
+
+                 <!-- nome  -->
+                <input type="text" name="nome" class="textbox" placeholder="Nome">
+    
+
+                 <!-- sobrenome    -->
+                 <input type="text" name="sobrenome" class="textbox" placeholder="Sobrenome">
+    
+
+                 <!-- email    -->
+                 <input type="email" name="email" class="textbox" placeholder="E-mail">
+    
+
+                 <!-- senha    -->
+                 <input type="password" class="textbox" name="senha" placeholder="Senha">
+
+    
+                 <!-- CPF -->
+                 <input type="text" name="cpf"  class="textbox" placeholder="CPF">
+                 
+                 
+                 <!-- Endereço -->
+                 <input type="text" name="endereco" class="textbox" placeholder="Endereço">
+
+
+                 <!-- Bairro -->
+                 <input type="text" name="bairro" class="textbox" placeholder="Bairro"> 
+
+    
+                 <!-- Cidade -->
+                 <input type="text" name="cidade" class="textbox" placeholder="Cidade">
+    
+    
+                <!-- idade -->
+                <input type="text" name="idade" class="textbox" placeholder=" _ / _ / __" onfocus="(this.type='Date')" onblur="(this.type='text')" id="date" >
+                
+                <!-- Footer -->
+                </div>
+                <input type="button" value="Login" class="btnlogincad">
+                
+                 <div class="footertxt"> Já posui uma conta? <button data-modal-target="#modal" data-close-button1 class="cadlink">Entrar</button></div>
+    
+    
+            </div>
+        </div>
+
+
+<!-- ///////////////////////////////////////////////// CARRINHO ////////////////////////////////////////// -->
+
+
+            <input type="image" src="images/carrinho.png" alt="Carrinho" class="linkimg">
+            </div>
+        
+        </header>
+
+
+<!-- ///////////////////////////////////////////// NAVBAR //////////////////////////////////////////////////////////////         -->
+        <nav>
+        <!-- ------------------------------------- MASCULINO -------------------------------------  -->
+            <div class="dropdown" data-dropdown>
+                <button class="linknav" data-dropdown-button>Masculino</button>
+                <div class="dropdown-menu ">
+                     <div class="dropdown-links">
+                        <div class="line"><a href="#" class="links">Camisetas</a></div>
+                        <div class="line"><a href="#" class="links">Jaquetas</a></div>
+                        <div class="line"><a href="#" class="links">Calçados</a></div>
+                        <div class="line"><a href="#" class="links">Calças</a></div>
+                        <div class="line"><a href="#" class="links">Shorts</a></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ------------------------------------- FEMININO -------------------------------------   -->
+
+
+            <div class="dropdown" data-dropdown>
+                <button class="linknav" data-dropdown-button>Feminino</button>
+                <div class="dropdown-menu ">
+                    <div class="dropdown-links">
+                        <div class="line"><a href="#" class="links">Camisetas</a></div>
+                        <div class="line"><a href="#" class="links">Jaquetas</a></div>
+                        <div class="line"><a href="#" class="links">Calçados</a></div>
+                        <div class="line"><a href="#" class="links">Calças</a></div>
+                        <div class="line"><a href="#" class="links">Shorts</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------------------------------------- ACESSORIOS ------------------------------------- -->
+
+            <div class="dropdown" data-dropdown>
+                <button class="linknav" data-dropdown-button>Acessorios</button>
+                <div class="dropdown-menu ">
+                    <div class="dropdown-links">
+                        <div class="line"><a href="#" class="links">Cabeça</a></div>
+                        <div class="line"><a href="#" class="links">Meias</a></div>
+                        <div class="line"><a href="#" class="links">Pulseiras</a></div>
+                        <div class="line"><a href="#" class="links">NBA</a></div> 
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------------------------------------- NBA ------------------------------------- -->
+
+            <div class="dropdown" data-dropdown>
+                <button class="linknav" data-dropdown-button>NBA</button>
+                <div class="dropdown-menu ">
+                    <div class="dropdown-links">
+                        <div class="line"><a href="#" class="links">Jerseys</a></div>
+                        <div class="line"><a href="#" class="links">Acessórios</a></div>
+                        <div class="line"><a href="#" class="links">Jaquetas</a></div>
+                        <div class="line"><a href="#" class="links">Joggers</a></div>
+                        <div class="line"><a href="#" class="links">Tênis</a></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            
+        </nav>
+    </div>
+    <main>
+        <div class="carousel"></div>
+        <div class="produtos"></div>
+    </main>
+    <footer></footer>
+</body>
+</html>

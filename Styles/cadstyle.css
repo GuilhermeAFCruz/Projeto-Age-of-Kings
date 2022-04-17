@@ -1,0 +1,155 @@
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+:root{
+
+    --cor0: #fff;
+    --cor1: #F5F3EF;
+    --cor2: #000000;
+    --cor3: #111111;
+    --cor4: #C84923;
+    --corlink:#6b6b6b;
+    --font1: 'Roboto', sans-serif;
+    --font2: 'Sawarabi Gothic', sans-serif;
+
+}
+
+
+.modalcad{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 10;
+    transition: 250ms ease-in-out;
+    background-color: white;
+    min-width: 300px;
+    width: 30vw;
+    min-height: 350px;
+    height: 80vh;
+    box-shadow: 4px 2px 7px #00000070;
+    
+    
+    
+    
+}
+.modalcad.active{
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+.modal-body-cad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    
+    
+    
+
+}
+.div-cad{
+    display: grid;
+    
+    
+    height: 90%;
+    width: 100%;
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+.modal-header-cad{
+    display: flex;
+    padding: 10px 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-header-cad .title{
+    margin: auto;
+    font:  normal 2em var(--font2);
+    margin-top: 15px;
+    padding-left: 14px;
+    
+}
+.modal-header-cad .close-button{
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    font-size: 150%;
+    font-weight: bolder;
+    outline: none;
+    padding-bottom: 25px;
+    
+
+}
+
+.div-cad > .textbox{
+    width: 90%;
+    min-width: 250px;
+    height: 3em;
+    border: 1px solid #00000050;
+    border-radius: 3px;
+    margin: 20px auto  0 auto;
+    text-indent: 10px;
+    font: normal .95em var(--font1);
+    
+    
+
+}
+.textbox:focus{
+    outline: none;
+}
+
+.btnlogincad{
+    width: 50%;
+    border: none;
+    background-color: black;
+    color: white;
+    height: 3em;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 2px;
+    font: normal 1em var(--font2);
+
+}
+.btnlogincad:hover{
+    cursor: pointer;
+    background-color: #C84923;
+}
+
+.cadastrolink{
+    color: var(--corlink);
+}
+
+.cadlink{
+    background: none;
+    border: none;
+    color: black;
+    margin-top: 20px;
+
+}
+.cadlink:hover{
+    cursor: pointer;
+    color: var(--cor4);
+    text-decoration: underline;
+}
+
+*::-webkit-scrollbar{
+    width: 5px;
+    background-color: #bebebe38;
+    border-radius: 4px;
+
+
+}
+*::-webkit-scrollbar-thumb{
+    background-color: #6161614b;
+    border-radius: 5px;
+    height: 30px;
+}
